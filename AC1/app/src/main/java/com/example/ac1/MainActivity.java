@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup mathRadioGroup;
     private RadioGroup gameRadioGroup;
     private RadioGroup historyRadioGroup;
+    private TextView feedbackTextView;
     private int correctAnswers = 0;
 
     @Override
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         gameRadioGroup = findViewById(R.id.gameRadioGroup);
         historyRadioGroup = findViewById(R.id.historyRadioGroup);
 
+        feedbackTextView = findViewById(R.id.feedbackTextView);
         Button sendButton = findViewById(R.id.sendButton);
         Button resetButton = findViewById(R.id.resetButton);
 
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 correctAnswers = 0;
+
 
                 int selectedMathId = mathRadioGroup.getCheckedRadioButtonId();
                 int selectedGameId = gameRadioGroup.getCheckedRadioButtonId();
@@ -59,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
 
                 String message = "Você acertou " + correctAnswers + " de 3 perguntas!";
                 Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
+                String feedbackMessage = "As respostas corretas são:\n";
+                feedbackMessage += "Matemática: 50\n";
+                feedbackMessage += "Jogos: Baldur's Gate 3\n";
+                feedbackMessage += "História: 1945\n";
+                feedbackTextView.setText(feedbackMessage);
             }
         });
 
