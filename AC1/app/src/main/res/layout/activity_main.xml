@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/r"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Matematica \n37+13 ="
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/mathRadioGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                        <RadioButton
+                            android:id="@+id/mat1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="17" />
+
+                        <RadioButton
+                            android:id="@+id/mat2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="32" />
+
+                        <RadioButton
+                            android:id="@+id/mat3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="50" />
+
+                        <RadioButton
+                            android:id="@+id/mat4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="67" />
+
+                        <RadioButton
+                            android:id="@+id/mat5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="18" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Jogos \nQual jogo recebeu o GOTY em 2023?"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/gameRadioGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                        <RadioButton
+                            android:id="@+id/game1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cyberpunk 2077" />
+
+                        <RadioButton
+                            android:id="@+id/game2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Baldur's Gate 3" />
+
+                        <RadioButton
+                            android:id="@+id/game3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Monster Hunter Rise Sunbreak" />
+
+                        <RadioButton
+                            android:id="@+id/game4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="God of War Ragnarok" />
+
+                        <RadioButton
+                            android:id="@+id/game5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The Last of Us Part 2" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Historia \nEm qual ano se deu inicio a segunda guerra mundial?"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/historyRadioGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                        <RadioButton
+                            android:id="@+id/hist1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1945" />
+
+                        <RadioButton
+                            android:id="@+id/hist2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2001" />
+
+                        <RadioButton
+                            android:id="@+id/hist3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1867" />
+
+                        <RadioButton
+                            android:id="@+id/hist4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2077" />
+
+                        <RadioButton
+                            android:id="@+id/hist5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1600" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar" />
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
